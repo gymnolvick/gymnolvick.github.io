@@ -1,0 +1,14 @@
+.header {
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.lists {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: bold;
+}
+
+.info-container {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: bold;
+    font-style: italic;
+}
