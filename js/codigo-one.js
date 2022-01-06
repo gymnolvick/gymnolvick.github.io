@@ -40,7 +40,7 @@ enlaces.forEach((element) => {
 
 });
 
-//Scroll Efect
+/*Scroll Efect
 
  let prevScrollPos = window.pageYOffset;
  let goTop = document.querySelector('.go-top');
@@ -89,5 +89,4 @@ abajo.addEventListener('click', () => {
   document.body.scrollTop = 600;
   document.documentElement.scrollTop = 600;
   
-});
-
+}); */

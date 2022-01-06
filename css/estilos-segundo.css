@@ -1,0 +1,190 @@
+:root {
+    --yelllow: #f4b11a;
+    --white: #ffffff;
+    --black: #000000;
+    --black: #000000;
+    --gray: #686868;
+}
+
+/*VENTAJAS AL ELEJIRNOS*/
+.ventajas {
+    background: var(--black);
+    color: var(--white);
+    text-align: center;
+
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.one-vetajas{
+    font-size: 50px;
+}
+.one-vetajas>p {
+    margin-top: -40px;
+}
+.two-ventajas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    margin: 10px;
+}
+.two-ventajas>div {
+    margin: 30px;
+}
+.two-ventajas > div > img {
+    width: 200px;
+    text-align: center;
+}
+.two-ventajas > div > p {
+    text-align: justify;
+}
+/*EFECTO SKEW*/
+.one-efecto-arriba {
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDBweCIgdmlld0JveD0iMCAwIDEyODAgMTQwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxnIGZpbGw9IiNmZmZmZmYiPjxwYXRoIGQ9Ik02NDAgMTM5TDAgMHYxNDBoMTI4MFYwTDY0MCAxMzl6Ii8+PC9nPjwvc3ZnPg==);
+    background-size: 100% 100px;
+    top: 0;
+    height: 100px;
+    z-index: 1;
+    transform: rotateX(180deg);
+}
+.one-efecto-abajo {
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDBweCIgdmlld0JveD0iMCAwIDEyODAgMTQwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxnIGZpbGw9IiNmZmZmZmYiPjxwYXRoIGQ9Ik02NDAgMTM5TDAgMHYxNDBoMTI4MFYwTDY0MCAxMzl6Ii8+PC9nPjwvc3ZnPg==);
+    background-size: 100% 100px;
+    bottom: 0;
+    height: 100px;
+    z-index: 1;
+}
+/*DESPENSA*/
+.imagen-fondo-despensa {
+    background-blend-mode: multiply;
+    background-image: url(https://fitnessrepublicrd.com/wp-content/uploads/2020/08/pexels-malidate-van-842142-scaled.jpg),linear-gradient(
+180deg,#0a0a0a 0%,rgba(0,0,0,0.33) 100%)!important;
+}
+.one-texto {
+    font-size: 50px;
+    padding-top: 300px;
+    padding-bottom: 300px;
+}
+
+@media (max-width: 1100px) {
+/*VENTAJAS AL ELEJIRNOS*/
+.ventajas {
+    background: var(--black);
+    color: var(--white);
+    text-align: center;
+
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.one-vetajas{
+    font-size: 50px;
+}
+.one-vetajas>p {
+    margin-top: -40px;
+}
+.two-ventajas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+    margin: 10px;
+}
+.two-ventajas>div {
+    margin: 30px;
+}
+.two-ventajas > div > img {
+    width: 200px;
+    text-align: center;
+}
+.two-ventajas > div > p {
+    text-align: justify;
+}
+/*EFECTO SKEW*/
+.one-efecto-arriba {
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDBweCIgdmlld0JveD0iMCAwIDEyODAgMTQwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxnIGZpbGw9IiNmZmZmZmYiPjxwYXRoIGQ9Ik02NDAgMTM5TDAgMHYxNDBoMTI4MFYwTDY0MCAxMzl6Ii8+PC9nPjwvc3ZnPg==);
+    background-size: 100% 100px;
+    top: 0;
+    height: 100px;
+    z-index: 1;
+    transform: rotateX(180deg);
+}
+.one-efecto-abajo {
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDBweCIgdmlld0JveD0iMCAwIDEyODAgMTQwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxnIGZpbGw9IiNmZmZmZmYiPjxwYXRoIGQ9Ik02NDAgMTM5TDAgMHYxNDBoMTI4MFYwTDY0MCAxMzl6Ii8+PC9nPjwvc3ZnPg==);
+    background-size: 100% 100px;
+    bottom: 0;
+    height: 100px;
+    z-index: 1;
+}
+/*DESPENSA*/
+.imagen-fondo-despensa {
+    background-blend-mode: multiply;
+    background-image: url(https://fitnessrepublicrd.com/wp-content/uploads/2020/08/pexels-malidate-van-842142-scaled.jpg),linear-gradient(
+180deg,#0a0a0a 0%,rgba(0,0,0,0.33) 100%)!important;
+}
+.one-texto {
+    font-size: 50px;
+    padding-top: 300px;
+    padding-bottom: 300px;
+}
+
+}
+
+@media (max-width: 550px) {
+   /*VENTAJAS AL ELEJIRNOS*/
+.ventajas {
+    background: var(--black);
+    color: var(--white);
+    text-align: center;
+
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.one-vetajas{
+    font-size: 30px;
+}
+.one-vetajas>p {
+    margin-top: -20px;
+}
+.two-ventajas {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    text-align: center;
+    margin: 10px;
+}
+.two-ventajas>div {
+    margin: 30px;
+}
+.two-ventajas > div > img {
+    width: 200px;
+    text-align: center;
+}
+.two-ventajas > div > p {
+    text-align: justify;
+}
+/*EFECTO SKEW*/
+.one-efecto-arriba {
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDBweCIgdmlld0JveD0iMCAwIDEyODAgMTQwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxnIGZpbGw9IiNmZmZmZmYiPjxwYXRoIGQ9Ik02NDAgMTM5TDAgMHYxNDBoMTI4MFYwTDY0MCAxMzl6Ii8+PC9nPjwvc3ZnPg==);
+    background-size: 100% 100px;
+    top: 0;
+    height: 100px;
+    z-index: 1;
+    transform: rotateX(180deg);
+}
+.one-efecto-abajo {
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDBweCIgdmlld0JveD0iMCAwIDEyODAgMTQwIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxnIGZpbGw9IiNmZmZmZmYiPjxwYXRoIGQ9Ik02NDAgMTM5TDAgMHYxNDBoMTI4MFYwTDY0MCAxMzl6Ii8+PC9nPjwvc3ZnPg==);
+    background-size: 100% 100px;
+    bottom: 0;
+    height: 100px;
+    z-index: 1;
+}
+/*DESPENSA*/
+.imagen-fondo-despensa {
+    background-blend-mode: multiply;
+    background-image: url(https://fitnessrepublicrd.com/wp-content/uploads/2020/08/pexels-malidate-van-842142-scaled.jpg),linear-gradient(
+180deg,#0a0a0a 0%,rgba(0,0,0,0.33) 100%)!important;
+}
+.one-texto {
+    font-size: 30px;
+    padding-top: 300px;
+    padding-bottom: 300px;
+}
+
+}

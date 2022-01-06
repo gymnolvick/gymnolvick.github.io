@@ -1,10 +1,9 @@
-:root{
-   --red:#ff2e63;
-   --black:#252a34;
-   --blue:#08d9d6;
-   --white:#eaeaea;
-   --title:35px;
-   --text:19px;
+:root {
+    --yelllow: #f4b11a;
+    --white: #ffffff;
+    --black: #000000;
+    --black: #000000;
+    --gray: #686868;
 }
 
 *{
@@ -15,10 +14,8 @@
 body{
     background: #ffff;
     overflow-x: hidden;
-    /*font-family: 'Red Hat Text', sans-serif;
-    font-family: 'IBM Plex Sans', sans-serif;
-    font-weight: bold;*/
-    
+    font-family: 'Mukta', sans-serif;
+    font-weight: bold;
 }
 .go-top{
     position: fixed;
@@ -27,17 +24,16 @@ body{
     width: 50px;
     height: 50px;
     background: #fff;
-    border:2px solid #f4b31a;
+    border:2px solid var(--yelllow);
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
     z-index: 1000;
     transition: 0.5s;
-    
 }
 .go-top:hover{
-    background: #f4b31a;
+    background: var(--yelllow);
     color:#fff;
     border: 2px solid var(--white);
 }
@@ -79,7 +75,7 @@ body{
     left: 0;
     width: 100%;
     height: 60px;
-    background: #f4b31a;
+    background: var(--gray);
 
     display: flex;
     justify-content: space-between;
@@ -90,19 +86,14 @@ body{
 .menu .logo-box h1 a{
     text-decoration: none;
     font-size: var(--title);
-    font-weight: 900;
-    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 400;
     color:var(--black);
 }
 .menu .list-container{
     margin-right: 20px;
-    margin-top: 20px;
-}
-@media (max-width: 900px) {
-    .menu .list-container{
-        margin-right: 20px;
-        margin-top: 00px;
-    }
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: 'Mukta', sans-serif;
+    font-weight: bold;
 }
 .menu .list-container ul{display: flex;}
 .menu .list-container ul li{list-style: none;}
@@ -116,12 +107,12 @@ body{
     font-size: 16px;
 }
 .menu .list-container ul li a.active{
-    background: var(--white);
-    color:#000000;
+    background: var(--yelllow);
+    color:#fff;
 }
 .menu .list-container ul li a:hover{
-    background: var(--white);
-    color:#000000;
+    background: var(--yelllow);
+    color:#fff;
 }
 
 .btn-menu > .fa-bars{
@@ -139,8 +130,8 @@ body{
         transition: 0.5s;
         cursor: pointer;
     }
-    .btn-menu > .fa-times{color: var(--red);}
-    .btn-menu > .fa-bars:hover{color:var(--red);}
+    .btn-menu > .fa-times{color: var(--yelllow);}
+    .btn-menu > .fa-bars:hover{color:var(--yelllow);}
     .menu .logo-box{margin-left: 30px;}
     .menu .list-container{
         position: fixed;
@@ -157,7 +148,7 @@ body{
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        border-top:4px solid var(--red);
+        border-top:4px solid var(--yelllow);
     }
     .menu .list-container ul li{
         width: 90%;
@@ -187,8 +178,7 @@ body{
     position: relative;
     width: 100%;
     height: 100vh;
-    background:url(../img/header.jpg);
-    background:url(../img/INICIO.jpg);
+    background:url(../img-gym/introduction.jpg);
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -200,8 +190,6 @@ body{
     width: 100%;
     height: 100%;
     background: rgba(0,0,0,0.6);
-    font-family: 'IBM Plex Sans', sans-serif;
-    font-weight: 900;
 
     display: flex;
     justify-content: center;
@@ -209,9 +197,9 @@ body{
     flex-direction: column;
 }
 .img-header .welcome h1{
-    font-size: 100px;
+    font-size: 50px;
     color:#fff;
-    font-weight: 900;
+    font-weight: 200;
 }
 .img-header .welcome hr{
     width: 400px;
@@ -221,26 +209,26 @@ body{
     margin-top: 5px;
 }
 .img-header .welcome p{
-    font-size: 40px;
+    font-size: 20px;
     color: #fff;
     margin-top: 20px;
 }
 .img-header .welcome > button{
     width: 170px;
     height: 40px;
-    background: var(--white);
+    background: var(--yelllow);
     border-radius: 24px;
     border:none;
     outline: none;
     font-size: 22px;
-    color: rgb(0, 0, 0);
+    color: #fff;
     text-align: center;
     margin-top: 20px;
     cursor: pointer;
     transition: 0.5s;
 }
 .img-header .welcome > button:hover{
-    background:var(--blue);
+    background:var(--yelllow);
 }
 
 @media only screen and (max-width:773px ){
@@ -268,7 +256,7 @@ body{
 }
 .acerca-de .info-container h1{
     font-size: 50px;
-    /*font-weight: 400;*/
+    font-weight: 400;
     color: var(--black);
     text-align: center;
     margin-bottom: 20px;
@@ -305,7 +293,7 @@ body{
     text-align: center;
     line-height: 40px;
     font-size: 20px;
-    background: var(--red);
+    background: var(--yelllow);
     border: none;
     outline: none;
     border-radius: 20px;
@@ -404,7 +392,7 @@ body{
     text-align: center;
 }
 .testimonios .testimonios-title h2{
-    font-size: 50px;
+    font-size: 30px;
     font-weight: normal;
     color: var(--black);
     margin-bottom: 10px;
@@ -439,7 +427,7 @@ body{
     cursor: pointer;
 }
 .testimonios .box-testimonio .card-testimonio .testimonio-text{
-    border: 2px solid var(--red);
+    border: 2px solid var(--yelllow);
     padding:20px;
     border-radius: 20px;
     transition: 0.1s;
@@ -448,7 +436,7 @@ body{
 .testimonios .box-testimonio .card-testimonio .testimonio-text h4{
     font-size: 30px;
     font-weight: 400;
-    color: var(--red);
+    color: var(--black);
     text-align: center;
     margin-bottom: 10px;
     transition: 0.1s;
@@ -460,10 +448,10 @@ body{
     color: var(--black);
 }
 .testimonios .box-testimonio .card-testimonio .testimonio-text:hover{
-    border: 2px solid var(--blue);
+    border: 2px solid var(--gray);
 }
 .testimonios .box-testimonio .card-testimonio .testimonio-text:hover h4{
-    color: var(--blue);
+    color: var(--gray);
 }
 
 @media only screen and (max-width:890px){
@@ -503,13 +491,13 @@ body{
     padding-bottom: 100px;
 }
 .footer .footer-content .footer-title{
-    width: 50%;
+    width: 80%;
     margin: auto;
     border:2px solid #fff;
     padding:15px;
 }
 .footer .footer-content .footer-title h2{
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 400;
     color: #fff;
     text-align: center;
@@ -527,7 +515,7 @@ body{
     background: #fff;
     padding:30px;
     border-radius: 50px;
-    border: 1.5px solid #f4b31a;;
+    border: 1.5px solid var(--yelllow);
 }
 .footer .formulario-content #formulario{
     display: flex;
@@ -546,7 +534,7 @@ body{
     margin:auto;
     border-radius: 24px;
     outline: none;
-    border:1.5px solid #f4b31a;;
+    border:1.5px solid var(--yelllow);
     text-align: center;
     font-size: 18px;
     color: var(--black);
@@ -558,7 +546,7 @@ body{
     padding: 20px;
     border-radius: 24px;
     outline: none;
-    border:1.5px solid #f4b31a;;
+    border:1.5px solid var(--yelllow);
     font-size: 15px;
     color: var(--black);
 }
@@ -573,7 +561,7 @@ body{
     text-align: center;
     line-height: 40px;
     font-size: 20px;
-    background: #f4b31a;
+    background: var(--yelllow);
     border: none;
     outline: none;
     border-radius: 20px;
@@ -582,7 +570,7 @@ body{
     transition: 0.5s;
 }
 .footer .formulario-content #formulario button:hover{
-    background: var(--blue);
+    background: var(--yelllow);
 }
 .footer .formulario-content #formulario .mensaje-form{
     width: 100%;
